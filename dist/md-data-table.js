@@ -320,7 +320,8 @@
                             });
                         });
 
-                        vm.dataStorage.addRowData(rowId, columnValues);
+                        var className = $scope.mdtRow['table-row-class-name'](row);
+                        vm.dataStorage.addRowData(rowId, columnValues, className);
                     });
                 }
             }],
